@@ -23,6 +23,7 @@ resource "google_compute_instance" "webserver" {
     network = "management-vpc"
     subnetwork = "test"
     access_config {
+      network_tier = "STANDARD"
     }
   }
 }
