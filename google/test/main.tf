@@ -22,5 +22,7 @@ resource "google_compute_instance" "webserver" {
   network_interface {
     network = "management-vpc"
     subnetwork = "test"
+    access_config {
+    }
   }
 }
